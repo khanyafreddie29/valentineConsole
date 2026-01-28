@@ -1,32 +1,42 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Valentine/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Henny+Penny&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap');
+
+*{
+    font-family: Berkshire Swash, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#nav {
-  padding: 30px;
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    background: linear-gradient(135deg,#F9F7FF 0%,#5915c0 100%);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;  
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.greeting{
+  font-family: Silkscreen, Arial, Helvetica, sans-serif ;
 }
 </style>
+
+<script>
+import Valentine from '@/views/ValentineConsole.vue'
+
+
+export default {
+  name: 'App',
+  components: {
+    Valentine
+  }
+}
+</script>
