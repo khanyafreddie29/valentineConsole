@@ -4,9 +4,12 @@
             1. top display which will show the main messages when btns clicked on
             2. btns to display msgs on command
             3. bttom display to show history of main msgs and special msgs -->
-    <TopDisplay/>
-    <Buttons/>
-    <BottomDisplay/>
+    <TopDisplay :displayMessage="currentMessage"/>
+    <Buttons
+    @message-updated="updateMessage"
+    @yes-activated="activateLetters"
+    />
+    <BottomDisplay :messageLog="messageHistory"/>
 </div>
 </template>
 
@@ -17,11 +20,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     border-radius: 15px;
     width: 400px;
     height: 700px;
     background-color: #F5F0FF;
     box-shadow: 12px -3px 5px rgb(82, 14, 82);
+    padding: 20px;
 }</style>
 
 <script>
@@ -35,6 +40,33 @@ export default {
         TopDisplay,
         Buttons,
         BottomDisplay
+    },
+    data(){
+        return {
+            currentMessage: `WILL YOU BE MY VALENTINE ??? 💌`,
+            lettersActivated: false,
+            messageHistory: `Waiting for your first message...`
+        }
+    },
+
+    mounted(){
+        console.log('Initial history: ', this.messageHistory)
+    },
+    methods: {
+        updateMessage(newMessage){
+            console.log('Updating History:', newMessage);
+            this.currentMessage = newMessage;
+
+            const timestamp = new Date().toLocaleTimeString([], {hour: `2-digit`, minute:`2-digit`});
+            this.messageHistory = `${timestamp}: ${newMessage}\n${this.messageHistory}`;
+
+            console.log('New history:', this.messageHistory)
+        },
+
+        activateLetters(){
+            this.lettersActivated = true;
+            this.updateMessage(`Good choice! Now click the letter buttons for sweet messages! 💖`);
+        },
     }
 }
 </script>

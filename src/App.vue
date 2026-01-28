@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <Valentine/>
+
+    <footer class="footer">
+      &copy; 2026 Khanya Freddie | All rights reserved
+    </footer>
   </div>
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Henny+Penny&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap');
 *{
-    font-family: Berkshire Swash, Arial, Helvetica, sans-serif;
+    font-family: Unkempt, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,9 +27,11 @@ body{
     background-attachment: fixed;  
 }
 
-.greeting{
-  font-family: Silkscreen, Arial, Helvetica, sans-serif ;
+.footer{
+  display: flex;
+  justify-content: center;
 }
+
 </style>
 
 <script>

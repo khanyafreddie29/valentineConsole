@@ -6,7 +6,7 @@
 
         <div class="display">
             <!-- append main and special msghs -->
-            Press a button to display a sweet message!
+            {{ displayMessage }}
         </div>
     </div>
 </template>
@@ -37,6 +37,9 @@
     font-size: 18px;
     justify-content: center;
     align-items: center;
+    display: flex;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 
@@ -44,6 +47,12 @@
 
 <script>
 export default {
-    name: 'TopDisplay'
+    name: 'TopDisplay',
+    props: {
+        displayMessage: {
+            type: String,
+            default: 'press Yes first, then click letters for sweet messages!'
+        }
+    }
 }
 </script>
