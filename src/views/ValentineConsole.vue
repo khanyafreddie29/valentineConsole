@@ -65,7 +65,7 @@ export default {
 
         activateLetters(){
             this.lettersActivated = true;
-            this.updateMessage(`Good choice! Now click the letter buttons for sweet messages! 💖`);
+            this.updateMessage(`Good choice! Now click the circular buttons for sweet messages! 💖`);
         },
     }
 }

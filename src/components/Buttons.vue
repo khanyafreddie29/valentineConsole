@@ -98,6 +98,7 @@
      gap: 20px;
      width: 100%;
  }
+
  </style>
  
  <script>
@@ -182,23 +183,24 @@
 
             if (this.yesClicked){
                 const messages = {
-                    A: `abundance of dih 💖`,
+                    A: `abundance of affection 💖`,
                     B: `be mine forever? you dont have a choice.💕`,
                     C: `cat dads are so in season 🌹 RAHHHH`,
-                    X: `if anything, i believe you're worth it 💋`,
-                    Y: `you make me smile with your epic compliments. laugh with your peak jokes.`,
-                    Z: `ZADDYYY. AY AY AY AY AY`,
-                    HEART1: `you ARE be mineee. I love you so much <3`,
-                    HEART2: `baby boy you'll be young foreverrr`
+                    X: `i love the way you show up for me 💞`,
+                    Y: `thank you for being my home in human form ❤️‍🩹.`,
+                    Z: `thank you for being yourself.💞`,
+                    HEART1: `you're worth every mile between us 💖`,
+                    HEART2: `im yours. no refunds 💝.`
                 };
 
                 this.$emit("message-updated", messages[letter] || `button ${letter} clicked`);
             } else {
-                message = `click YES to unlock sweet messsages 💝 !`;
+                message = `click YES to unlock sweet messsages ❤️ !`;
             }
 
             console.log('Emitting button message:', message);
             this.$emit(`button clicked`, `button ${letter} clicked`);
+            console.error(`Error updating message`)
          }
      }
  }

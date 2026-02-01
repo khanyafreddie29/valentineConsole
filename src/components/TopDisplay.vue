@@ -1,7 +1,7 @@
 <template>
     <div class="display-container">
         <div class="title">
-           Happy Valentine's Day 
+            🎀 Happy Valentine's Day Liso 🎀
         </div>
 
         <div class="display">

@@ -30,7 +30,7 @@
    flex: 1;
    font-size: 14px;
    color: hsl(0, 6%, 16%);
-   text-align: left;
+   text-align: center;
    white-space: pre-wrap; /* Important for newlines */
    word-break: break-word;
    overflow-y: auto;

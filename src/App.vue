@@ -9,9 +9,9 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    font-family: Unkempt, Arial, Helvetica, sans-serif;
+    font-family: Urabnist, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
