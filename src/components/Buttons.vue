@@ -43,60 +43,63 @@
      height: 45px;
      width: 50px;
      border-radius: 50%;
-     border: none;
+     border: 2px solid #bc69ff;
      background-color: #C9A8FF;
      box-shadow: 5px 5px 2px rgb(57, 54, 54);
      cursor: pointer;
      font-size: medium;
+     transition: all 0.3s ease;
  }
  
  .btn:hover{
      background-color:#D8B4FE;
      color:rgb(255, 255, 255);
-     transform: translateY(-3px);
+     transform: translateY(-3px) scale(1.05);
  }
  
  .controls .btn-hrt{
      height: 45px;
      width: 50px;
      border-radius: 50%;
-     border: none;
+     border: 2px solid #bc69ff;
      background-color: #C9A8FF;
      box-shadow: 5px 5px 2px rgb(57, 54, 54);
      cursor: pointer;
      font-size: medium;
+     transition: all 0.3s ease;
  }
  
  .btn-hrt:hover{
      background-color:#D8B4FE;
      color:rgb(255, 255, 255);
-     transform: translateY(-3px);
+     transform: translateY(-3px) scale(1.05);
  }
  
  .btn-letter{
      margin-bottom: 15px;
-     border-radius: 15px;
+     border-radius: 20px;
      padding: 5px;
      width: 100px;
      max-width: 250px;
-     border: none;
+     border: 2px solid #bc69ff;
      box-shadow: 5px 5px 2px rgb(57, 54, 54);
      background-color: #C9A8FF;
      cursor: pointer;
      font-size: medium;
+     transition: all 0.3s ease;
  }
  
  .btn-letter:hover{
      background-color: #D8B4FE;
      color:rgb(255, 255, 255);
-     transform: translateY(-3px);
+     transform: translateY(-3px) scale(1.05);
  }
  
  .create-letter{
      display: flex;
      justify-content: center;
      gap: 20px;
-     width: 100%;
+     width: 200px;
  }
 
  </style>
@@ -181,6 +184,8 @@
          buttonClicked(letter){
             this.soundEffect("click");
 
+           
+
             if (this.yesClicked){
                 const messages = {
                     A: `abundance of affection 💖`,
@@ -199,8 +204,8 @@
             }
 
             console.log('Emitting button message:', message);
-            this.$emit(`button clicked`, `button ${letter} clicked`);
-            console.error(`Error updating message`)
+            this.$emit("message-updated", message); // Fixed: changed backticks to quotes
+            this.$emit("button-clicked", `button ${letter} clicked`); // Fixed: changed back
          }
      }
  }

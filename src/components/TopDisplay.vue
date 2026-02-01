@@ -26,12 +26,16 @@
 }
 
 .display{
-    border: inset;
+    border: 2px solid #bc69ff;
     border-radius: 15px;
     width: 350px;
     height: 260px;
     margin-top: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color:  rgb(255, 255, 255);
+    background-image: 
+        radial-gradient(circle at 10px 10px, #ccb6ff 2px, transparent 2px),
+        radial-gradient(circle at 30px 30px, #ccb6ff 2px, transparent 2px);
+    background-size: 40px 40px;
     padding: 20px;
     text-align: center;
     font-size: 18px;
@@ -40,6 +44,7 @@
     display: flex;
     overflow-wrap: break-word;
     word-break: break-word;
+    color: #a070db;
 }
 
 

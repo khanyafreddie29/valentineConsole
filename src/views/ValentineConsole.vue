@@ -16,7 +16,7 @@
 <style scoped>
 
 .box {
-    border: 3px solid #4C1D95 ;
+    border: 3px dashed #4C1D95; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,9 @@
     width: 400px;
     height: 700px;
     background-color: #F5F0FF;
-    box-shadow: 12px -3px 5px rgb(82, 14, 82);
+    box-shadow: 
+        0 0 20px rgb(106, 37, 129),
+        12px -3px 15px rgb(91, 47, 128);
     padding: 20px;
 }</style>
 

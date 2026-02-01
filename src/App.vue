@@ -11,7 +11,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    font-family: Urabnist, Arial, Helvetica, sans-serif;
+    font-family: Urbanist, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +20,7 @@
 body{
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 140px;
     background: linear-gradient(135deg,#F9F7FF 0%,#5915c0 100%);
     background-repeat: no-repeat;
     background-size: cover ;
@@ -30,6 +30,9 @@ body{
 .footer{
   display: flex;
   justify-content: center;
+  color: #ffff;
+  margin-top: 10px;
+  font-size: small;
 }
 
 </style>
