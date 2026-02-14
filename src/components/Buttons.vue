@@ -131,7 +131,7 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
 
   .controls {
-    gap: 16px;
+    gap: 18px;
   }
 
   .create-letter {

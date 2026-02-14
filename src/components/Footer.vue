@@ -16,7 +16,7 @@
   border-radius: 10px;
   background: linear-gradient(135deg,#a184f9 0%,#5915c0 100%);
   backdrop-filter: blur(5px);
-  width: 300px;
+  width: 400px;
 }
 
 /* mobile */
@@ -41,6 +41,8 @@
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
+    padding: 8px 12px;
+    text-align: center;
   }
 }
 
@@ -51,6 +53,8 @@
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    padding: 8px 12px;
+    text-align: center;
   }
 }
 
@@ -61,6 +65,8 @@
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    padding: 8px 12px;
+    text-align: center;
   }
 }
 

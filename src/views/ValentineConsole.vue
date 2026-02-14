@@ -44,7 +44,7 @@
 /* tablets */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .box {
-    width: 70%;
+    width: 100%;
     max-width: 450px;
     height: auto;
     min-height: 650px;
