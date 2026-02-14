@@ -174,7 +174,7 @@
             this.soundEffect("yesbtn");
             this.yesClicked = true;
             console.log('Emitting: Good Choice message');
-            this.$emit("message-updated", `Yayyy !! ;)`);
+            // this.$emit("message-updated", `Yayyy !! ;)`);
             console.log('Emitting yes-activated event')
             this.$emit("yes-activated");
             // $emit() CAN BE CALLED USING @ in parent component to use
@@ -189,18 +189,20 @@
             if (this.yesClicked){
                 const messages = {
                     A: `abundance of affection 💖`,
-                    B: `be mine forever? you dont have a choice.💕`,
-                    C: `cat dads are so in season 🌹 RAHHHH`,
-                    X: `i love the way you show up for me 💞`,
+                    B: `be mine forever? you dont have a choice.🤨`,
+                    C: `cat dads are so in season 🐱`,
+                    X: `this is so cringe lol 😭`,
                     Y: `thank you for being my home in human form ❤️‍🩹.`,
                     Z: `thank you for being yourself.💞`,
                     HEART1: `you're worth every mile between us 💖`,
-                    HEART2: `im yours. no refunds 💝.`
+                    HEART2: `if you act up im going to return you 🤺.`
                 };
 
                 this.$emit("message-updated", messages[letter] || `button ${letter} clicked`);
             } else {
-                message = `click YES to unlock sweet messsages ❤️ !`;
+                const message = `if you want to proceed, click YES`;
+                this.$emit("message-updated", message);
+                return;
             }
 
             console.log('Emitting button message:', message);

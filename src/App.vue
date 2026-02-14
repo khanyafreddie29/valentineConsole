@@ -1,10 +1,7 @@
 <template>
   <div id="app">
     <Valentine/>
-
-    <footer class="footer">
-      &copy; 2026 Khanya Freddie | All rights reserved
-    </footer>
+    <Footer/>
   </div>
 </template>
 
@@ -24,21 +21,15 @@ body{
     background: linear-gradient(135deg,#F9F7FF 0%,#5915c0 100%);
     background-repeat: no-repeat;
     background-size: cover ;
-    background-attachment: fixed;  
-}
-
-.footer{
-  display: flex;
-  justify-content: center;
-  color: #ffff;
-  margin-top: 10px;
-  font-size: small;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
 </style>
 
 <script>
 import Valentine from '@/views/ValentineConsole.vue'
+import Footer from '@/components/Footer.vue';
 
 
 export default {
