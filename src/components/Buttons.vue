@@ -102,6 +102,61 @@
      width: 200px;
  }
 
+/* mobile */
+@media (max-width: 575.98px) {
+
+  .controls {
+    width: 100%;
+    gap: 12px; /* slightly tighter grid */
+  }
+
+  .controls .btn,
+  .controls .btn-hrt {
+    width: 100%;
+    max-width: 50px; /* keep circular size */
+  }
+
+  .create-letter {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .btn-letter {
+    width: 45%;
+    min-width: 80px;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .controls {
+    gap: 16px;
+  }
+
+  .create-letter {
+    width: 100%;
+  }
+
+  .btn-letter {
+    width: 110px;
+  }
+}
+
+/* desktop */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .create-letter {
+    width: 200px; /* keep original */
+  }
+}
+
+/* extra large devices */
+@media (min-width: 1200px) {
+  .create-letter {
+    width: 200px; /* keep original */
+  }
+}
+
  </style>
  
  <script>

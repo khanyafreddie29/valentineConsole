@@ -51,6 +51,47 @@
     border-radius: 10px;
     border: 1px solid rgba(212, 182, 255, 0.5);
 }
+
+/* mobile */
+@media (max-width: 575.98px) {
+
+  .display2 {
+    width: 100%;
+    max-width: 350px; /* keep original design cap */
+    height: auto;
+    min-height: 130px;
+  }
+
+  .message-log {
+    font-size: 13px;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .display2 {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+
+/* desktop */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .display2 {
+    width: 350px; /* original */
+  }
+}
+
+/* extra large devices */
+@media (min-width: 1200px) {
+
+  .display2 {
+    width: 350px; /* original */
+  }
+}
+
 </style>
 
 <script>

@@ -47,6 +47,61 @@
     color: #a070db;
 }
 
+/* mobile */
+@media (max-width: 575.98px) {
+
+  .title {
+    width: 95%;
+    max-width: 300px; /* keep original feel */
+    font-size: 18px;
+  }
+
+  .display {
+    width: 100%;
+    max-width: 350px; /* never exceed original */
+    height: auto;
+    min-height: 220px; /* preserve visual size */
+    font-size: 16px;
+  }
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .title {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .display {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+
+/* desktops */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .title {
+    width: 300px;
+  }
+
+  .display {
+    width: 350px;
+  }
+}
+
+/* extra large devices */
+@media (min-width: 1200px) {
+
+  .title {
+    width: 300px;
+  }
+
+  .display {
+    width: 350px;
+  }
+}
 
 </style>
 

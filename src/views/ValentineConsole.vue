@@ -29,7 +29,43 @@
         0 0 20px rgb(106, 37, 129),
         12px -3px 15px rgb(91, 47, 128);
     padding: 20px;
-}</style>
+}
+
+/* mobile */
+@media (max-width: 575.98px) {
+  .box {
+    width: 95%;              /* almost full width */
+    max-width: 400px;        /* never exceed original design */
+    height: auto;            /* allow content to grow */
+    min-height: 600px;       /* maintain design feel */
+  }
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .box {
+    width: 70%;
+    max-width: 450px;
+    height: auto;
+    min-height: 650px;
+  }
+}
+
+/* desktops */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .box {
+    width: 400px; /* keep original */
+  }
+}
+
+/* extra large devices */
+@media (min-width: 1200px) {
+  .box {
+    width: 400px; /* keep original */
+  }
+}
+
+</style>
 
 <script>
 import TopDisplay from '@/components/TopDisplay.vue'
