@@ -1,32 +1,32 @@
-# Valentine
+# Valentine Console - a digital love letter 💌
 
 Valentine console is an interactive legacy Vue.js application that creates personalised Valentine's day experience with sweet messages, sound effects and an eyecatching purple aesthetic.
 
 ## ✨ Features
 
-    Interactive YES/NO Buttons - Playful response system with multiple messages
+- Interactive YES/NO Buttons - Playful response system with multiple messages
 
-    Sweet Message Buttons - 8 different love messages (A, B, C, X, Y, Z, HEART1, HEART2)
+- Sweet Message Buttons - 8 different love messages (A, B, C, X, Y, Z, HEART1, HEART2)
 
-    Sound Effects - Audio feedback for button clicks
+- Sound Effects - Audio feedback for button clicks
 
-    Message History Log - Records all displayed messages with timestamps
+- Message History Log - Records all displayed messages with timestamps
 
-    Responsive Design - Works on mobile, tablet, and desktop
+- Responsive Design - Works on mobile, tablet, and desktop
 
-    Landscape Mode Support - Optimized for all orientations
+- Landscape Mode Support - Optimized for all orientations
 
-    Purple Theme - Beautiful gradient background with glassmorphism effects
+- Purple Theme - Beautiful gradient background with glassmorphism effects
 
 ## 🛠️ Technologies Used
 
-    Vue.js 2 - Frontend framework
+- Vue.js 2 - Frontend framework
 
-    CSS3 - Styling with Flexbox/Grid
+- CSS3 - Styling with Flexbox/Grid
 
-    Font Awesome - Heart icons
+- Font Awesome - Heart icons
 
-    Web Audio API - Sound effects
+- Web Audio API - Sound effects
 
 ## 🗂️ Project structure
 ```
@@ -68,14 +68,14 @@ The Flow:
 ## Button Messages:
 
 Button	Message
-- A	 abundance of affection 💖
-- B	 be mine forever? you dont have a choice.💕
-- C	 cat dads are so in season 🌹 RAHHHH
-- X	 i love the way you show up for me 💞
-- Y	 thank you for being my home in human form ❤️‍🩹
-- Z	 thank you for being yourself.💞
-- HEART1	you're worth every mile between us 💖
-- HEART2	im yours. no refunds 💝
+- A - abundance of affection 💖
+- B	- be mine forever? you dont have a choice.💕
+- C	- cat dads are so in season 🌹 RAHHHH
+- X	- i love the way you show up for me 💞
+- Y	- thank you for being my home in human form ❤️‍🩹
+- Z	- thank you for being yourself.💞
+- HEART1 - you're worth every mile between us 💖
+- HEART2 - im yours. no refunds 💝
 
 ## 🎨 Color Palette
 - Primary Purple: #4C1D95
@@ -87,24 +87,24 @@ Button	Message
 
 ## 🔧 Installation
 
-# Clone the repository
+## Clone the repository
 git clone https://github.com/yourusername/valentine-console.git
 
-# Navigate to project
+## Navigate to project
 cd valentine-console
 
-# Install dependencies
+## Install dependencies
 npm install
 
-# Add sound files to src/assets/sounds/
+## Add sound files to src/assets/sounds/
 - AnimeWOW.mp3
 - fartSound.mp3
 - MouseClick.mp3
 
-# Run development server
+## Run development server
 npm run serve
 
-# Build for production
+## Build for production
 npm run build
 
 ## 🎯 Usage
