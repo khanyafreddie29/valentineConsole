@@ -215,7 +215,7 @@
             } else if (this.noClickCount === 3){
                 message = `You know what to pick.`;
             } else if (this.noClickCount >= 4){
-                message = `Sir.. sir..`
+                message = `um.. hello??`
             }
 
             console.log('Emitting message-updated:', message); // Add this
@@ -245,7 +245,7 @@
                 const messages = {
                     A: `abundance of affection 💖`,
                     B: `be mine forever? you dont have a choice.🤨`,
-                    C: `cat dads are so in season 🐱`,
+                    C: `cat parents are so in season 🐱`,
                     X: `this is so cringe lol 😭`,
                     Y: `thank you for being my home in human form ❤️‍🩹.`,
                     Z: `thank you for being yourself.💞`,
